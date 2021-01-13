@@ -1,0 +1,22 @@
+Groupe :  
+chef de projet: abderazak  
+
+rapporteur :achraf , ahmed
+
+repartition des taches:
+abderazak , ahmed: partie apprenant , db, view
+achraf : partie staff, db, view , conception
+
+lundi: presenter uml avec des exemple du different diagramme, discuter la conception du projet , realiser un wareframe sur papier du projet
+mardi: realiser la partie login , et une petite partie de l identification, connecter la database , ainsi la conception du projet(les different diag).
+
+mercredi: finaliser l identification, pousser le projet sur github et ajouter les collaborateur(concept:"branches").
+achraf va commencer la partie staff, et ahmed , abderazak commencerai la partie apprenant.
+jeudi: finaliser la partie enregistrement.
+vendredi : creer session pour afficher le nom de staff ou le nom d apprenant sur les pages correspondante
+mardi: travailler sur l interface des de deux page , injecter les donnée depuis la base de donnée vers l interface 
+mercredi: finaliser le projet. 
+
+
+
+

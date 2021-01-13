@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <BorderPane prefHeight="550.0" prefWidth="520.0">
+         <left>
+            <AnchorPane prefHeight="215.0" prefWidth="230.0" style="-fx-background-color: #ce0033;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imgSimplonView" fitHeight="182.0" fitWidth="241.0" layoutX="12.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+
+                        <Image url="@../../img/simplon.jpeg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="550.0" prefWidth="330.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="32.0" layoutY="298.0" text="Username">
+                     <font>
+                        <Font name="Barrio Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" layoutX="112.0" layoutY="294.0" mouseTransparent="true" prefHeight="26.0" prefWidth="173.0" promptText="Username" AnchorPane.topAnchor="294.0" />
+                  <Label layoutX="32.0" layoutY="339.0" text="Password">
+                     <font>
+                        <Font name="Barrio Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordField" layoutX="112.0" layoutY="334.0" prefHeight="26.0" prefWidth="173.0" promptText="Password" />
+                  <Button layoutX="40.0" layoutY="394.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="25.0" prefWidth="251.0" style="-fx-background-color: #ce0033;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Barrio Regular" size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="imgHeadView" fitHeight="211.0" fitWidth="221.0" layoutX="68.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/code.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="cancelButton" layoutX="39.0" layoutY="426.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="251.0" style="-fx-background-color: #ce0033;" text="Cancel" textFill="#fffdfd">
+                     <font>
+                        <Font name="Barrio Regular" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="loginMessage" layoutX="36.0" layoutY="241.0" prefHeight="17.0" prefWidth="269.0" textFill="#e53f02">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="508.0" text="Veiller Vous Enregister">
+                     <font>
+                        <Font name="Barrio Regular" size="10.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="162.0" layoutY="504.0" mnemonicParsing="false" onAction="#toRegisterForm" prefHeight="9.0" prefWidth="128.0" style="-fx-background-color: #ce0033;" text="Enregistrer Vous" textFill="WHITE">
+                     <font>
+                        <Font name="Barrio Regular" size="10.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

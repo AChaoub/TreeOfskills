@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentController">
+   <top>
+      <AnchorPane prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: #ce0033;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="simplonIcon" fitHeight="71.0" fitWidth="60.0" layoutX="25.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/simplo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="84.0" layoutY="25.0" text="Bonjour" textFill="WHITE">
+               <font>
+                  <Font name="Barrio Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="489.0" layoutY="26.0" text="Deconnecter" textFill="WHITE">
+               <font>
+                  <Font name="Barrio Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="sessionId" layoutX="163.0" layoutY="25.0" text="Ahmed" textFill="WHITE">
+               <font>
+                  <Font name="Barrio Regular" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="192.0" layoutY="14.0" prefHeight="35.0" prefWidth="219.0" text="Mes Competance" textFill="#92c5da">
+               <font>
+                  <Font name="Barrio Regular" size="24.0" />
+               </font></Label>
+            <Label fx:id="comp1" layoutX="56.0" layoutY="60.0" prefHeight="20.0" prefWidth="218.0" text="Competance1">
+               <font>
+                  <Font name="Barlow Condensed Regular" size="14.0" />
+               </font></Label>
+            <Label fx:id="comp2" layoutX="339.0" layoutY="61.0" prefHeight="20.0" prefWidth="219.0" text="Competance1">
+               <font>
+                  <Font name="Barlow Condensed Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="comp3" layoutX="56.0" layoutY="134.0" prefHeight="20.0" prefWidth="221.0" text="Competance1">
+               <font>
+                  <Font name="Barlow Condensed Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="comp6" layoutX="340.0" layoutY="211.0" prefHeight="20.0" prefWidth="219.0" text="Competance1">
+               <font>
+                  <Font name="Barlow Condensed Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="comp4" layoutX="341.0" layoutY="135.0" prefHeight="20.0" prefWidth="218.0" text="Competance1">
+               <font>
+                  <Font name="Barlow Condensed Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="comp5" layoutX="56.0" layoutY="210.0" prefHeight="20.0" prefWidth="218.0" text="Competance1">
+               <font>
+                  <Font name="Barlow Condensed Regular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="comp1Level1" layoutX="56.0" layoutY="92.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp1Level3" layoutX="202.0" layoutY="92.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp1Level2" layoutX="129.0" layoutY="92.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp2Level1" layoutX="340.0" layoutY="93.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp2Level3" layoutX="486.0" layoutY="93.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp2Level2" layoutX="413.0" layoutY="93.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp4Level1" layoutX="340.0" layoutY="163.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp4Level3" layoutX="486.0" layoutY="163.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp4Level2" layoutX="413.0" layoutY="163.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp6Level1" layoutX="340.0" layoutY="242.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp6Level3" layoutX="486.0" layoutY="242.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp6Level2" layoutX="413.0" layoutY="242.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp3Level1" layoutX="56.0" layoutY="162.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp3Level3" layoutX="202.0" layoutY="162.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp3Level2" layoutX="129.0" layoutY="162.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp5Level1" layoutX="56.0" layoutY="241.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp5Level3" layoutX="202.0" layoutY="241.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="comp5Level2" layoutX="129.0" layoutY="241.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="73.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #92c5da;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageProfile" fitHeight="150.0" fitWidth="150.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/profile.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="cancelButton" layoutX="81.0" layoutY="296.0" onMouseClicked="#cancelButtonOnAction" prefHeight="23.0" prefWidth="63.0" text="Exit..." textFill="WHITE">
+               <font>
+                  <Font name="Barrio Regular" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

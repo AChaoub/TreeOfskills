@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentController">
+   <top>
+      <AnchorPane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #ce0033;" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="140.0" layoutY="14.0" prefHeight="18.0" prefWidth="119.0" text="Mes Competance" />
+            <Label fx:id="comp1" layoutX="43.0" layoutY="57.0" prefHeight="18.0" prefWidth="119.0" text="Competance1" />
+            <Label fx:id="comp2" layoutX="227.0" layoutY="59.0" prefHeight="18.0" prefWidth="119.0" text="Competance2" />
+            <Label fx:id="comp3" layoutX="38.0" layoutY="127.0" prefHeight="18.0" prefWidth="119.0" text="Competance2" />
+            <Label fx:id="comp4" layoutX="227.0" layoutY="127.0" prefHeight="18.0" prefWidth="119.0" text="Competance2" />
+            <Label fx:id="comp6" layoutX="235.0" layoutY="194.0" prefHeight="18.0" prefWidth="119.0" text="Competance2" />
+            <Label fx:id="comp5" layoutX="40.0" layoutY="194.0" prefHeight="18.0" prefWidth="119.0" text="Competance2" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageProfile" fitHeight="113.0" fitWidth="130.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/profile.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
