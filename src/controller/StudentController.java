@@ -172,7 +172,7 @@ public class StudentController implements Initializable, EventHandler {
         Connection connectDb = dbConnect.getConnect();
 
         // Query that expect to be executed
-        String query = "insert into compapprenant VALUES("+appID+","+levelID+","+competenceID+")";
+        String query = "insert into compapprenant VALUES("+appID+","+competenceID+","+levelID+")";
         System.out.println(query);
         try {
             Statement statement  = connectDb.createStatement();
@@ -194,14 +194,20 @@ public class StudentController implements Initializable, EventHandler {
         if (event.getSource() == comp1Level1){
             System.out.println("comp1Level1 clicked");
             insertCurrentLevel(sessionApp,1, 1);
+            comp1Level1.setStyle("-fx-background-color: green;");
 
         }else if (event.getSource() == comp1Level2){
             System.out.println("comp1Level2 clicked");
             insertCurrentLevel(sessionApp, 1,2);
+            comp1Level1.setStyle("-fx-background-color: green;");
+            comp1Level2.setStyle("-fx-background-color: green;");
 
         }else if (event.getSource() == comp1Level3){
             System.out.println("comp1Level3 clicked");
             insertCurrentLevel(sessionApp, 1, 3);
+            comp1Level1.setStyle("-fx-background-color: green;");
+            comp1Level2.setStyle("-fx-background-color: green;");
+            comp1Level3.setStyle("-fx-background-color: green;");
 
 
         }
@@ -210,14 +216,21 @@ public class StudentController implements Initializable, EventHandler {
         else if (event.getSource() == comp2Level1){
             System.out.println("comp2Level1 clicked");
             insertCurrentLevel(sessionApp, 2,1);
+            comp2Level1.setStyle("-fx-background-color: green;");
 
         }else if (event.getSource() == comp2Level2){
             System.out.println("comp2Level2 clicked");
+
             insertCurrentLevel(sessionApp, 2,2);
+            comp2Level1.setStyle("-fx-background-color: green;");
+            comp2Level2.setStyle("-fx-background-color: green;");
 
         }else if (event.getSource() == comp2Level3){
             System.out.println("comp2Level3 clicked");
             insertCurrentLevel(sessionApp, 2,3);
+            comp2Level1.setStyle("-fx-background-color: green;");
+            comp2Level2.setStyle("-fx-background-color: green;");
+            comp2Level3.setStyle("-fx-background-color: green;");
 
         }
 
@@ -225,30 +238,39 @@ public class StudentController implements Initializable, EventHandler {
         else if (event.getSource() == comp3Level1){
             System.out.println("comp3Level1 clicked");
             insertCurrentLevel(sessionApp, 3,1);
-
+            comp3Level1.setStyle("-fx-background-color: green;");
         }else if (event.getSource() == comp3Level2){
             System.out.println("comp3Level2 clicked");
             insertCurrentLevel(sessionApp, 3,2);
-
+            comp3Level1.setStyle("-fx-background-color: green;");
+            comp3Level2.setStyle("-fx-background-color: green;");
         }else if (event.getSource() == comp3Level3){
             System.out.println("comp3Level3 clicked");
             insertCurrentLevel(sessionApp, 3, 3);
-
+            comp3Level1.setStyle("-fx-background-color: green;");
+            comp3Level2.setStyle("-fx-background-color: green;");
+            comp3Level3.setStyle("-fx-background-color: green;");
         }
 
         // For competence 4
         else if (event.getSource() == comp4Level1){
             System.out.println("comp4Level1 clicked");
             insertCurrentLevel(sessionApp, 4, 1);
+            comp4Level1.setStyle("-fx-background-color: green;");
+
 
         }else if (event.getSource() == comp4Level2){
             System.out.println("comp4Level2 clicked");
             insertCurrentLevel(sessionApp, 4,2);
-
+            comp4Level1.setStyle("-fx-background-color: green;");
+            comp4Level2.setStyle("-fx-background-color: green;");
 
         }else if (event.getSource() == comp4Level3){
             System.out.println("comp4Level3 clicked");
             insertCurrentLevel(sessionApp, 4,3);
+            comp4Level1.setStyle("-fx-background-color: green;");
+            comp4Level2.setStyle("-fx-background-color: green;");
+            comp4Level3.setStyle("-fx-background-color: green;");
 
         }
 
@@ -256,14 +278,20 @@ public class StudentController implements Initializable, EventHandler {
         else if (event.getSource() == comp5Level1){
             System.out.println("comp5Level1 clicked");
             insertCurrentLevel(sessionApp, 5,1);
+            comp5Level1.setStyle("-fx-background-color: green;");
+
 
         }else if (event.getSource() == comp5Level2){
             System.out.println("comp5Level2 clicked");
             insertCurrentLevel(sessionApp, 5,2);
-
+            comp5Level1.setStyle("-fx-background-color: green;");
+            comp5Level2.setStyle("-fx-background-color: green;");
         }else if (event.getSource() == comp5Level3){
             System.out.println("comp5Level3 clicked");
             insertCurrentLevel(sessionApp, 5,3);
+            comp5Level1.setStyle("-fx-background-color: green;");
+            comp5Level2.setStyle("-fx-background-color: green;");
+            comp5Level3.setStyle("-fx-background-color: green;");
 
         }
 
@@ -271,14 +299,19 @@ public class StudentController implements Initializable, EventHandler {
         else if (event.getSource() == comp6Level1){
             System.out.println("comp6Level1 clicked");
             insertCurrentLevel(sessionApp, 6,1);
+            comp6Level1.setStyle("-fx-background-color: green;");
 
         }else if (event.getSource() == comp6Level2){
             System.out.println("comp6Level2 clicked");
             insertCurrentLevel(sessionApp, 6, 2);
-
+            comp6Level1.setStyle("-fx-background-color: green;");
+            comp6Level2.setStyle("-fx-background-color: green;");
         }else if (event.getSource() == comp6Level3){
             System.out.println("comp6Level3 clicked");
             insertCurrentLevel(sessionApp, 6,3);
+            comp6Level1.setStyle("-fx-background-color: green;");
+            comp6Level2.setStyle("-fx-background-color: green;");
+            comp6Level3.setStyle("-fx-background-color: green;");
 
         }
 

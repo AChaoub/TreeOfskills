@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{BC712C22-3688-49A6-ABF2-D81948F0A2D0}" Label="" LastModificationDate="1609882613" Name="TreeSkills" Objects="12" Symbols="0" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{BC712C22-3688-49A6-ABF2-D81948F0A2D0}" Label="" LastModificationDate="1611224540" Name="TreeSkills" Objects="12" Symbols="0" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -456,7 +456,7 @@ Shadow=0</a:DisplayPreferences>
 <a:Code>Diagramme_classe</a:Code>
 <a:CreationDate>1609854706</a:CreationDate>
 <a:Creator>Admin</a:Creator>
-<a:ModificationDate>1609856668</a:ModificationDate>
+<a:ModificationDate>1611224540</a:ModificationDate>
 <a:Modifier>Admin</a:Modifier>
 <a:Location>file:///%[PRJ_ROOT_DIR]%/Diagramme_classe.moo</a:Location>
 <a:Extension>moo</a:Extension>

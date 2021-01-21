@@ -110,10 +110,11 @@ public class RegisterController implements Initializable {
             ResultSet queryResult = statement.executeQuery(queryCombo);
             while(queryResult.next()){
                 options.add(queryResult.getString("titre_Promo"));
-
             }
 
             combo.setItems(options);
+
+
 
             statement.close();
             queryResult.close();
@@ -148,12 +149,13 @@ public class RegisterController implements Initializable {
         String insertField = "INSERT INTO apprenant(idApp, nomApp, prenomApp, surnom,emailApp, tel, password) VALUES ('" ;
         String insertValues= idApp +"','" +firstname +"','"+ lastName +"','"+ userName +"','"+ emailAdd +"','"+ tels +"','"+ passwords + "')";
         String insertToRegister = insertField + insertValues;
-
+        String insertPromoApp = "INSERT INTO promoapprenant VALUES ("+idApp+","+combo.getSelectionModel()+")";
 
         try {
             Statement statement = connectDb.createStatement();
             statement.executeUpdate(insertToRegister);
             registerSuccess.setText("vous etes bien enregister!!");
+            statement.executeQuery(insertPromoApp);
 
 
         }catch (Exception e){

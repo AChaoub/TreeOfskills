@@ -150,7 +150,7 @@ public class StaffController implements Initializable {
                                 idApp = Integer.parseInt(app1.getId());
                                 DbConnect connectNow = new DbConnect();
                                 Connection connectDb = connectNow.getConnect();
-                                String recupApp = "select a.nomApprenant ,a.prenomApprenant ,a.idApprenant from apprenant a , promoapprenant p , staff s where s.id_Promo = p.id_Promo AND s.idStaff ='"+session+"' AND a.idApprenant = p.idApprenant";
+                                String recupApp = "select a.nomApprenant ,a.prenomApprenant ,a.idApprenant from apprenant a , promoapprenant p , staff s where s.id_Promo = p.id_Promo AND s.idStaff ='"+session+"' AND a.idApprenant = p.idApprenant AND a.idAppreanant = '"+idApp;
                                 System.out.println(recupApp);
                                 AnchorRef.getChildren().clear();
                                 remplirCompetenceApp();
@@ -293,8 +293,6 @@ public class StaffController implements Initializable {
 
                             }
 
-
-
                             Nomc.setText(reqComApp.getString(1));
 
                             AnchorCompApp.getChildren().addAll(Nomc,b1,b2,b3);
@@ -365,9 +363,9 @@ public class StaffController implements Initializable {
 
 
                         }
-                        positionYHbox +=50;
+                        positionYHbox +=40;
                     }
-                    cpt =0;
+                    cpt = 0 ;
                     //AnchorComp.getChildren().add(Vbox);
                     //st4.close();
                 }catch(Exception e){
@@ -377,7 +375,7 @@ public class StaffController implements Initializable {
 
 
                 AnchorRef.getChildren().add(AnchorComp);
-                s +=400;
+                s +=500;
                 positionYHbox = 50;
             }
 
@@ -386,7 +384,7 @@ public class StaffController implements Initializable {
             e.printStackTrace();
             e.getCause();
         }
-        sc.setContent(AnchorPromo);
+        //sc.setContent(AnchorPromo);
     }
 }
 
